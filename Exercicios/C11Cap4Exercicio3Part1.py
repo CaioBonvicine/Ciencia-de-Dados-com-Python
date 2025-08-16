@@ -1,9 +1,8 @@
 import numpy as np
-import random
 
-campo = np.zeros((2, 2), dtype=int)
-linha = random.randint(0, 1)
-coluna = random.randint(0, 1)
+campo = np.zeros((2, 2))
+linha = np.random.randint(0, 1)
+coluna = np.random.randint(0, 1)
 campo[linha, coluna] = 1
 
 i = 0
