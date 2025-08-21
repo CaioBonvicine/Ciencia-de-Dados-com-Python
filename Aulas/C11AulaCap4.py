@@ -48,3 +48,26 @@ arr7 = np.random.randint(3, 10, 10)
 print(arr7)
 print(np.unique(arr7, return_counts=True))  # Imprime os valores únicos do array e a quantidade que de vezes que cada um aparece.
 #Gera um array com 10 números inteiros aleatórios entre 3 e 10, com uma seed fixa para reprodutibilidade.
+
+print(mtz>5)  # Compara cada elemento da matriz mtz com 5, retornando um array booleano.
+
+print(mtz[mtz > 5])  # Imprime os elementos da matriz mtz que são maiores que 5.
+
+print(mtz[mtz%2 == 0])  # Imprime os elementos da matriz mtz que são pares.
+
+arr8 = np.array(['goku', 'vegeta', 'gohan', 'goten'])
+print(arr8)
+print(arr8[np.char.find(arr8, 'go') >= 0]) # Imprime os elementos do array que contêm a substring 'go'.
+
+ds = np.loadtxt(r"C:\Users\Meu-PC\Documents\Python\DataSets\space.csv", 
+                delimiter=';', 
+                dtype=str, 
+                encoding='utf-8')
+
+
+print(ds[0, :])
+ds_cost = ds[1:, 6]
+ds_cost = ds_cost.astype(float)  # Converte os valores de custo para float
+print(ds_cost)
+#calcula a média do custo
+print(ds_cost.mean())
