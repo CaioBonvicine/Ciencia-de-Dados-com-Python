@@ -22,7 +22,7 @@ print("Soma da linha E:", df.iloc[4].sum())
 
 print()
 
-df_slice = df.loc[['A', 'B', 'E'], ['X', 'Y']]
+df_slice = df.loc[['A', 'C', 'E'], ['X', 'Y']]
 print(df_slice)
 print()
 print("Soma das linhas:", df_slice.sum(axis = 1))
